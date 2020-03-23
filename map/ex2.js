@@ -43,9 +43,8 @@ Expected OUTPUT for this sample
 */
 
 function getFoodCategories(foods) {
+    return foods.map((type) => type['isVegetarian'] ? `${type['food']} is suitable for vegetarians` : `${type['food']} is not suitable for vegetarians`)
 }
-
-
 
 // DON'T TOUCH THIS!
 module.exports = getFoodCategories;
